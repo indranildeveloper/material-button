@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-// Delete me
-export const Thing = () => {
+export const MaterialButton = () => {
   return <button>Click Me</button>;
 };
