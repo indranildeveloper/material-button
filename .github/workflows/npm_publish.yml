@@ -42,7 +42,7 @@ jobs:
           cache: 'npm'
       - run: npm install -g yarn
       - run: npm install -g npm@latest
-      - run: npx semantic-release
+      - run: yarn add -D semantic-release
       - run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
