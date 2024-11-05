@@ -48,7 +48,7 @@ jobs:
       - run: npm install -g yarn
       - run: npm install -g npm@latest
       - run: yarn install
-      - run: npm publish --access public
+      - run: npm login && npm publish --access public
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
