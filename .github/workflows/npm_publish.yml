@@ -44,11 +44,11 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
       - run: npm install -g yarn
       - run: npm install -g npm@latest
       - run: yarn install
-      - run: yarn add -D semantic-release
       - run: npm publish --access public
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
