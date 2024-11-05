@@ -35,7 +35,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "material-button",
+  "name": "@indranildeveloper/material-button",
   "author": "Indranil Halder",
   "module": "dist/material-button.esm.js",
   "size-limit": [
