@@ -47,7 +47,7 @@ jobs:
       - run: npm install -g npm@latest
       - run: yarn install
       - run: yarn add -D semantic-release
-      - run: yarn semantic-release
+      - run: npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
